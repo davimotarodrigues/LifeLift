@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLift</title>
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="icon" href="../img/icone.png">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="../img/logoprojeto.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre/sobre.html">Sobre nós</a></li>
+                <li><a href="../projeto/projeto.html">Nosso projeto</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Bem vindo ao <bold>LifeLift</bold>
+        </h1>
+        <p>Inovando para um melhor amanhã</p>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Sobre o projeto</h2>
+            <p>O LifeLift foi criado para melhorar a qualidade do sono, utilizando inteligência artificial para
+                identificar e resolver problemas individuais de descanso. Seu objetivo é promover uma rotina de sono
+                mais saudável e revitalizante por meio de soluções personalizadas baseadas em dados e aprendizado
+                contínuo.</p>
+            <p>Com um time de desenvolvedores dedicados, procuramos melhorar o sono das pessoas por meio da inovação.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Nossos objetivos</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h3>Educar pessoas sobre o sono</h3>
+                    <p>Oferecer informações baseadas em evidências para ajudar as pessoas a entenderem a importância do
+                        sono e as causas da insônia.</p>
+                </div>
+                <div class="objective-card">
+                    <h3>Estratégias Personalizadas</h3>
+                    <p>Fornecer planos personalizados de melhoria do sono com base nas necessidades e padrões
+                        individuais de cada usuário.</p>
+                </div>
+                <div class="objective-card">
+                    <h3>Prevenção de Distúrbios do Sono</h3>
+                    <p>Ensinar os usuários a identificar os sinais de distúrbios do sono e quando procurar ajuda
+                        profissional para tratamentos adequados.</p>
+                </div>
+            </div>
+        </section>
+        <div class="btnAI">
+            <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+            <script src="https://files.bpcontent.cloud/2024/10/23/20/20241023202833-1QR1W8SI.js"></script>
+        </div>
+    </div>
+    <div id="contarao" class="gradientefooter"></div>
+    <footer id="contact">
+        <p>&copy; 2024 LifeLift. Todos direitos reservados.<br>
+            Email: lifelift.futurefest.org@gmail.com<br>
+            Endereço: Av. Lins de Vasconcelos, 1222 - Aclimação, São Paulo - SP, 01538-001</p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        window.onscroll = function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 10) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        };
+
+        document.getElementById('bot-img').addEventListener('click', function () {
+            var botOptions = document.getElementById('bot-options');
+
+            if (botOptions.classList.contains('show')) {
+                botOptions.classList.remove('show');
+            } else {
+                botOptions.classList.add('show');
+            }
+        });
+
+    </script>
+    </script>
+</body>
+
+</html>

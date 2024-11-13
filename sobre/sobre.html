@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLift</title>
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="icon" href="../img/icone.png">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="../img/logoprojeto.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre/sobre.html">Sobre nós</a></li>
+                <li><a href="../projeto/projeto.html">Nosso projeto</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="classegradiente">
+        <section id="about" class="about-section">
+            <h1><strong>Sobre nós</strong></h1>
+            <p>Somos um grupo de jovens desenvolvedores onde procuramos aprimorar o dia a dia de todos</p>
+        </section>
+        <section id="profiles" class="profiles-section">
+            <h2>Sobre os envolvidos</h2>
+            <div class="service-card2">
+                <div class="caio"><img src="../img/pfp/caio.png" alt="Foto CAIO"></div>
+                <h3>Caio Fortino</h3>
+                <p>Web Design.</p>
+            </div>
+            <div class="service-card">
+                <div class="davi"><img src="../img/pfp/davi.png" alt="Foto Davi"></div>
+                <h3>Davi Mota</h3>
+                <p>Programação e Web Design.</p>
+            </div>
+            <div class="service-card2">
+                <div class="tales"><img src="../img/pfp/tales.png" alt="Foto tales"></div>
+                <h3>Tales Oliveira</h3>
+                <p>Comunicação.</p>
+            </div>
+            <div class="service-card">
+                <div class="lucas"><img src="../img/pfp/lucas.png" alt="Foto lucas"></div>
+                <h3>Lucas Quirino</h3>
+                <p>Programação e comunicação.</p>
+            </div>
+        </section>
+        <div class="btnAI">
+            <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+            <script src="https://files.bpcontent.cloud/2024/10/23/20/20241023202833-1QR1W8SI.js"></script>
+        </div>
+        <div class="divisação"></div>
+    </div>
+    <div id="contarao" class="gradientefooter"></div>
+    <footer id="contact">
+        <p>&copy; 2024 LifeLift. Todos direitos reservados.<br>
+            Email: lifelift.futurefest.org@gmail.com<br>
+            Endereço: Av. Lins de Vasconcelos, 1222 - Aclimação, São Paulo - SP, 01538-001</p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+<script>
+    window.onscroll = function () {
+        const header = document.getElementById('header');
+        if (window.scrollY > 10) {
+            header.classList.add('header-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+        }
+    };
+
+    document.getElementById('bot-img').addEventListener('click', function () {
+        var botOptions = document.getElementById('bot-options');
+
+        if (botOptions.classList.contains('show')) {
+            botOptions.classList.remove('show');
+        } else {
+            botOptions.classList.add('show');
+        }
+    });
+
+
+    function apertar() {
+        const btn = document.getElementById('myBtn');
+        let clicked = false;
+
+        btn.addEventListener('click', () => {
+            if (!clicked) {
+                btn.textContent = 'Salvo! Boa sorte na sua jornada para um sono melhor!!';
+                setTimeout(() => {
+                    btn.textContent = 'Anotei essas dicas!';
+                    clicked = false;
+                }, 2000);
+            }
+            clicked = !clicked;
+        });
+    }
+</script>
+
+</html>

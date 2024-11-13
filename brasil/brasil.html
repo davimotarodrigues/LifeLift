@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLift</title>
+    <link rel="stylesheet" href="brasil.css">
+    <link rel="icon" href="../img/icone.png">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="../img/logoprojeto.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre/sobre.html">Sobre nós</a></li>
+                <li><a href="../projeto/projeto.html">Nosso projeto</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="dados" class="dados-section">
+    <h2>Estatísticas Sobre a Insônia</h2>
+    <h2>Como a Insônia Afeta a Sociedade</h2>
+</div>
+<div class="btnAI">
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/23/20/20241023202833-1QR1W8SI.js"></script>
+</div>
+    <div class="estatisticas">
+        <div class="estatistica-item card">
+            <img src="../img/sono2.jpg" alt="Prevalência da Insônia" class="estatistica-img">
+            <div class="estatistica-text">
+                <h3>Prevalência Geral da Insônia</h3>
+                <p>A insônia é um problema global, com uma prevalência significativa entre a população mundial:
+                </p>
+                <ul>
+                    <li>Entre 10% e 30% da população mundial sofre de insônia crônica</li>
+                    <li>Em áreas urbanas, a taxa de insônia pode alcançar até 50%</li>
+                </ul>
+            </div>
+            </div>
+            <div class="estatistica-item card">
+                <img src="../img/sono.jpg" alt="Diferenças Regionais" class="estatistica-img">
+                <div class="estatistica-text">
+                    <h3>Diferenças Regionais</h3>
+                    <p>A prevalência de insônia varia em diferentes regiões do mundo:</p>
+                    <ul>
+                        <li>Estados Unidos: 30% relatam insônia de curto prazo; 10% insônia crônica</li>
+                        <li>Europa: Prevalência entre 15% e 25%</li>
+                        <li>Japão e Coreia do Sul: Entre 20% e 30% dos adultos relatam insônia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="estatistica-item card">
+                <img src="../img/pessoasemsonotriste.jpg" alt="Impacto de Idade e Gênero" class="estatistica-img">
+                <div class="estatistica-text">
+                    <h3>Impacto da Idade e Gênero</h3>
+                    <p>Idade e gênero influenciam significativamente a prevalência de insônia:</p>
+                    <ul>
+                        <li>Idosos: 30% a 48% dos adultos com mais de 60 anos sofrem de insônia</li>
+                        <li>Adolescentes: Cerca de 20% a 25% enfrentam dificuldades para dormir</li>
+                        <li>Mulheres têm taxas de insônia entre 25% e 40%, contra 20% a 35% nos homens</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="estatistica-item card">
+                <img src="../img/pessoacomsonotriste.jpg" alt="Impacto Econômico" class="estatistica-img">
+                <div class="estatistica-text">
+                    <h3>Impacto Econômico e na Saúde</h3>
+                    <p>As consequências da insônia se estendem à economia e ao bem-estar geral:</p>
+                    <ul>
+                        <li>A insônia causa uma perda anual de produtividade de aproximadamente $63 bilhões nos EUA
+                        </li>
+                        <li>Risco 1.5 a 2 vezes maior de desenvolver problemas de saúde mental e condições
+                            cardiovasculares</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contarao" class="gradientefooter"></div>
+            </div>
+            <footer id="contact">
+                <p>&copy; 2024 LifeLift. Todos direitos reservados.<br>
+                    Email: lifelift.futurefest.org@gmail.com<br>
+                    Endereço: Av. Lins de Vasconcelos, 1222 - Aclimação, São Paulo - SP, 01538-001</p>
+            </footer>
+            <script type="text/javascript" src="js/script.js"></script>
+</body>
+<script>
+    window.onscroll = function () {
+        const header = document.getElementById('header');
+        if (window.scrollY > 10) {
+            header.classList.add('header-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+        }
+    };
+
+    document.getElementById('bot-img').addEventListener('click', function () {
+        var botOptions = document.getElementById('bot-options');
+
+        if (botOptions.classList.contains('show')) {
+            botOptions.classList.remove('show');
+        } else {
+            botOptions.classList.add('show');
+        }
+    });
+
+
+    function apertar() {
+        const btn = document.getElementById('myBtn');
+        let clicked = false;
+
+        btn.addEventListener('click', () => {
+            if (!clicked) {
+                btn.textContent = 'Salvo! Boa sorte na sua jornada para um sono melhor!!';
+                setTimeout(() => {
+                    btn.textContent = 'Anotei essas dicas!';
+                    clicked = false;
+                }, 2000);
+            }
+            clicked = !clicked;
+        });
+    }
+</script>
+
+</html>

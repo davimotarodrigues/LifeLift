@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    padding-top: 70px; 
+}
+
+header {
+    background: linear-gradient(164deg, rgba(0,0,0,1) 0%, rgba(16,45,160,1) 50%, rgba(23,64,226,1) 73%);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    animation: slidebottom2 1.5s ease 0s 1 normal none;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+.header-scrolled .logo img {
+    width: 35px;
+}
+
+.header-scrolled {
+    background: linear-gradient(164deg, rgba(0, 0, 0, 0.671) 0%, rgba(16,45,160,0.671) 50%, rgba(23,64,226,0.671) 73%);
+    transition: all 0.2s ease;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.gradientefooter{
+    padding: 10vh;
+    background: linear-gradient(0deg, rgba(21,21,21,1) 11%, #274bda00 100%);
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: chegand3 1.5s ease-in;
+    color: #333;
+}
+
+form p {
+    text-align: center;
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #1740e2;
+    max-width: 100%;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #1740e2;
+    width: 100%;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #bcc8f7;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+form input:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: #1740e2;
+    box-shadow: 0 0 5px rgba(23, 64, 226, 0.3);
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background: #1740e2;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+form button:hover {
+    background: #112fa7;
+    transform: scale(1.05);
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+form label { animation-delay: 0.2s; }
+form input { animation-delay: 0.4s; }
+form textarea { animation-delay: 0.6s; }
+form button { animation-delay: 0.8s; }
+
+.sla{
+    background-color: #151515;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.classegradiente {
+    background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(67,101,232,1) 60%, rgba(23,64,226,1) 100%);
+    padding-top: 60px;
+}
+
+.hero-section {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a seção dentro do espaço */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #1740e2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color:  #ffffff;
+    margin-top: 10px;
+}
+
+.dados-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.dados-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1740e2;
+}
+
+.estatisticas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.estatistica-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.estatistica-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1740e2;
+}
+
+.estatistica-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+footer {
+    background: #151515;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}

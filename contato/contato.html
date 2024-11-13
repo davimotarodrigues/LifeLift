@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LifeLift</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/icone.png">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="../img/logoprojeto.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre/sobre.html">Sobre nós</a></li>
+                <li><a href="../projeto/projeto.html">Nosso projeto</a></li>
+                <li><a href="#contarao">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    </section>
+    <div class="btnAI">
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2024/10/23/20/20241023202833-1QR1W8SI.js"></script>
+    </div>
+    <div class="sla">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <p>Contato</p>
+            <input type="hidden" name="access_key" value="96c55234-20b8-4701-ba05-61c105dc3209">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer id="contact">
+        <p>&copy; 2024 LifeLift. Todos direitos reservados.<br>
+            Email: lifelift.futurefest.org@gmail.com<br>
+            Endereço: Av. Lins de Vasconcelos, 1222 - Aclimação, São Paulo - SP, 01538-001</p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+<script>
+    window.onscroll = function () {
+        const header = document.getElementById('header');
+        if (window.scrollY > 10) {
+            header.classList.add('header-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+        }
+    };
+
+    document.getElementById('bot-img').addEventListener('click', function () {
+        var botOptions = document.getElementById('bot-options');
+
+        if (botOptions.classList.contains('show')) {
+            botOptions.classList.remove('show');
+        } else {
+            botOptions.classList.add('show');
+        }
+    });
+
+
+    function apertar() {
+        const btn = document.getElementById('myBtn');
+        let clicked = false;
+
+        btn.addEventListener('click', () => {
+            if (!clicked) {
+                btn.textContent = 'Salvo! Boa sorte na sua jornada para um sono melhor!!';
+                setTimeout(() => {
+                    btn.textContent = 'Anotei essas dicas!';
+                    clicked = false;
+                }, 2000);
+            }
+            clicked = !clicked;
+        });
+    }
+</script>
+
+</html>

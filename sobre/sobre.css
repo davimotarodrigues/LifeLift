@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.classegradiente{
+    background: linear-gradient(247deg, rgba(255,255,255,1) 0%, rgba(188,200,247,1) 30%, rgba(148,167,242,1) 46%, rgba(106,133,237,1) 64%, rgba(23,64,226,1) 100%);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.divisação{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    margin: 0;
+    background: rgba(39,74,218,1);
+}
+
+.gradientefooter{
+    padding: 10vh;
+    background: linear-gradient(180deg, rgba(39,74,218,1) 11%, rgba(21,21,21,1) 76%);
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: chegand3 1.5s ease-in;
+    color: #333;
+}
+
+form p {
+    text-align: center;
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #1740e2;
+    max-width: 100%;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #1740e2;
+    width: 100%;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #bcc8f7;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+form input:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: #1740e2;
+    box-shadow: 0 0 5px rgba(23, 64, 226, 0.3);
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background: #1740e2;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+form button:hover {
+    background: #112fa7;
+    transform: scale(1.05);
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+form label { animation-delay: 0.2s; }
+form input { animation-delay: 0.4s; }
+form textarea { animation-delay: 0.6s; }
+form button { animation-delay: 0.8s; }
+
+header {
+    background: linear-gradient(164deg, rgba(0,0,0,1) 0%, rgba(16,45,160,1) 50%, rgba(23,64,226,1) 73%);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    animation: slidebottom2 1.5s ease 0s 1 normal none;
+}
+
+header .logo img{
+    width: 50px;
+}
+
+.profiles-section h2{
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-links li {
+    transition: all 0.2s ease;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links li:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hero-section {
+    background-image: url(img/fiap-scaled.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    animation: slideIn 1s ease-in;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    animation: CEHGAP 1s ease-out;
+}
+
+.about-section{
+    padding-top: 20vh;
+    padding-bottom: 80px;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section, .services-section {
+    text-align: center;
+    padding-top: 95px;
+}
+
+.about-section h2, .services-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-section h1{
+    margin-top: 125px;
+    font-size: 3rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.service-card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 250px;
+    animation: chegando 0.5s ease-in;
+    transition: all 0.2s ease;
+}
+
+.service-card:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.service-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card2 {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 250px;
+    animation: chegand2 0.5s ease-in;
+    transition: all 0.2s ease;
+}
+
+.service-card2:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.service-card2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-card2 h3 {
+    margin-bottom: 10px;
+}
+
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    padding: 20px 0px 0px 20px;
+}
+
+.services-section h2{
+    grid-column: span 3;
+}
+
+.profiles-section{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.profiles-section h2{
+grid-column: span 2;
+text-align: center;
+align-content: center;
+padding: 20px 0px 0px 20px;
+}
+
+footer {
+    background: #151515;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.header-scrolled .logo img {
+    width: 35px;
+}
+
+.sla{
+    background-color: #151515;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.header-scrolled {
+    background: linear-gradient(164deg, rgba(0, 0, 0, 0.671) 0%, rgba(16,45,160,0.671) 50%, rgba(23,64,226,0.671) 73%);
+    transition: all 0.2s ease;
+}
+.logo img {
+    width: 100px;
+    transition: all 0.3s ease;
+}
+strong{
+    color: #1740e2;
+    font-size: larger;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes CEHGAP {
+    0% { transform: translateX(20px); opacity: 1; }
+    100% { transform: translatex(0); opacity: 1; }
+}
+
+@keyframes chegando {
+    0% { transform: translateX(20px); opacity: 1; }
+    100% { transform: translatex(0); opacity: 1; }
+}
+
+@keyframes chegand2 {
+    0% { transform: translateX(-20px); opacity: 1; }
+    100% { transform: translatex(0); opacity: 1; }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LifeLift</title>
+    <link rel="stylesheet" href="mundo.css">
+    <link rel="icon" href="../img/icone.png">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="../img/logoprojeto.png" alt="Logo"></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre/sobre.html">Sobre nós</a></li>
+                <li><a href="../projeto/projeto.html">Nosso projeto</a></li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="classegradiente">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Como combater a insônia te ajuda no dia a dia?</h1>
+                <p>
+                    A insônia é um problema comum que afeta milhões de pessoas, prejudicando a qualidade de vida e a
+                    saúde em geral.
+                    Combater a insônia no dia a dia envolve a adoção de hábitos saudáveis que favoreçam o descanso
+                    adequado.
+                    Algumas estratégias eficazes incluem estabelecer uma rotina de sono consistente, criar um ambiente
+                    tranquilo
+                    e confortável para dormir, evitar o consumo de cafeína e eletrônicos antes de deitar, e praticar
+                    técnicas de
+                    relaxamento. Com pequenas mudanças de estilo de vida, é possível melhorar a qualidade do sono e
+                    garantir um descanso restaurador.
+                </p>
+            </div>
+        </section>
+
+        <section id="dados" class="dados-section">
+            <h2>Estatísticas Globais de Saúde</h2>
+            <div class="estatisticas-grid">
+
+                <div class="estatistica-item">
+                    <h3>Melhora a sua saúde</h3>
+                    <p>Combater a insônia é essencial para a saúde física e mental. O sono de qualidade permite que o
+                        corpo se regenere,
+                        fortaleça o sistema imunológico e mantenha o equilíbrio hormonal. Dormir bem também melhora a
+                        memória,
+                        a concentração e a tomada de decisões.</p>
+                </div>
+
+                <div class="estatistica-item">
+                    <h3>Melhora da autoestima</h3>
+                    <p>Dormir bem é essencial para a autoestima, pois o sono de qualidade impacta diretamente nossa
+                        aparência,
+                        energia e disposição. Ao combater a insônia, o corpo se renova, o que reflete positivamente na
+                        nossa autopercepção.</p>
+                </div>
+
+                <div class="estatistica-item">
+                    <h3>Melhora da produtividade</h3>
+                    <p>A qualidade do sono tem um impacto direto na produtividade. Quando conseguimos combater a insônia
+                        e obter
+                        um descanso adequado, nossa mente fica mais clara, focada e alerta, facilitando o cumprimento de
+                        responsabilidades.</p>
+                </div>
+
+                <div class="estatistica-item">
+                    <h3>Melhora do controle emocional</h3>
+                    <p>O controle emocional é essencial para a saúde mental e um aliado no combate à insônia. Praticar
+                        técnicas
+                        como respiração profunda ou meditação ajuda a criar um ambiente propício ao descanso, melhorando
+                        o sono.</p>
+                </div>
+            </div>
+        </section>
+        <div id="contarao" class="gradientefooter"></div>
+    </main>
+    <div class="btnAI">
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2024/10/23/20/20241023202833-1QR1W8SI.js"></script>
+    </div>
+    <footer id="contact">
+        <p>&copy; 2024 LifeLift. Todos direitos reservados.<br>
+            Email: lifelift.futurefest.org@gmail.com<br>
+            Endereço: Av. Lins de Vasconcelos, 1222 - Aclimação, São Paulo - SP, 01538-001</p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+<script>
+    window.onscroll = function () {
+        const header = document.getElementById('header');
+        if (window.scrollY > 10) {
+            header.classList.add('header-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+        }
+    };
+
+    document.getElementById('bot-img').addEventListener('click', function () {
+        var botOptions = document.getElementById('bot-options');
+
+        if (botOptions.classList.contains('show')) {
+            botOptions.classList.remove('show');
+        } else {
+            botOptions.classList.add('show');
+        }
+    });
+
+
+    function apertar() {
+        const btn = document.getElementById('myBtn');
+        let clicked = false;
+
+        btn.addEventListener('click', () => {
+            if (!clicked) {
+                btn.textContent = 'Salvo! Boa sorte na sua jornada para um sono melhor!!';
+                setTimeout(() => {
+                    btn.textContent = 'Anotei essas dicas!';
+                    clicked = false;
+                }, 2000);
+            }
+            clicked = !clicked;
+        });
+    }
+</script>
+
+</html>
