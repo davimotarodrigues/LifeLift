@@ -88,98 +88,11 @@ header .nav-links li a {
     background: linear-gradient(0deg, rgba(21,21,21,1) 11%, #274bda00 100%);
 }
 
-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: chegand3 1.5s ease-in;
-    color: #333;
-}
-
-form p {
-    text-align: center;
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: bold;
-    color: #1740e2;
-    max-width: 100%;
-    width: 100%;
-}
-
-form label {
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: bold;
-    color: #1740e2;
-    width: 100%;
-}
-
-form input, 
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #bcc8f7;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-}
-
-form input:focus, 
-form textarea:focus {
-    outline: none;
-    border-color: #1740e2;
-    box-shadow: 0 0 5px rgba(23, 64, 226, 0.3);
-}
-
-form textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-form button {
-    background: #1740e2;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: block;
-    margin: 20px auto 0;
-}
-
-form button:hover {
-    background: #112fa7;
-    transform: scale(1.05);
-}
-
-form label,
-form input,
-form textarea,
-form button {
-    opacity: 0;
-    animation: slideIn 0.5s ease-out forwards;
-}
-
-form label { animation-delay: 0.2s; }
-form input { animation-delay: 0.4s; }
-form textarea { animation-delay: 0.6s; }
-form button { animation-delay: 0.8s; }
-
-.sla{
-    background-color: #151515;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
 
 .classegradiente {
-    background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(67,101,232,1) 60%, rgba(23,64,226,1) 100%);
-    padding-top: 60px;
+    background: rgb(160,154,255);
+    background: linear-gradient(90deg, rgba(160,154,255,1) 0%, rgba(93,153,255,1) 50%, rgba(0,0,0,1) 100%);
+        padding-top: 60px;
 }
 
 .hero-section {
@@ -194,12 +107,12 @@ form button { animation-delay: 0.8s; }
 .hero-content {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza a seção dentro do espaço */
+    margin: 0 auto;
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
-    color: #1740e2;
+    color: white;
     margin-bottom: 15px;
 }
 
@@ -218,7 +131,7 @@ form button { animation-delay: 0.8s; }
 .dados-section h2 {
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #1740e2;
+    color: white;
 }
 
 .estatisticas-grid {
