@@ -13,7 +13,7 @@ body {
 }
 
 .classegradiente{
-    background: linear-gradient(167deg, rgba(255,255,255,1) 0%, rgba(65,101,241,1) 54%, rgba(23,64,226,1) 100%);
+        background: #1740e2;
 }
 
 .bold{
