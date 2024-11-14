@@ -35,12 +35,35 @@ header {
     animation: slidebottom2 1.5s ease 0s 1 normal none;
 }
 
-header .logo img{
-    width: 50px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    padding-left: 50px;
+    margin-right: auto;
+}
+
+header .logo img {
+    width: 160px;
+}
+
+header .nav-links {
+    padding-right: 65vh;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    color: white;
+    text-decoration: none;
 }
 
 .header-scrolled .logo img {
-    width: 35px;
+    width: 85px;
 }
 
 .header-scrolled {
