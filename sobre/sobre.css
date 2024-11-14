@@ -136,37 +136,42 @@ header {
     animation: slidebottom2 1.5s ease 0s 1 normal none;
 }
 
-header .logo img{
-    width: 50px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.profiles-section h2{
-    color: white;
+header .logo {
+    padding-left: 50px;
+    margin-right: auto;
 }
 
-.nav-links {
+header .logo img {
+    width: 160px;
+}
+
+header .nav-links {
+    padding-right: 65vh;
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin: 0;
+    gap: 20px;
 }
 
-.nav-links li {
-    transition: all 0.2s ease;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
+header .nav-links li a {
     color: white;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-.nav-links li:hover {
-    transform: scale(1.3);
-    cursor: pointer;
+.header-scrolled .logo img {
+    width: 85px;
+}
+
+.header-scrolled {
+    background: linear-gradient(164deg, rgba(0, 0, 0, 0.671) 0%, rgba(16,45,160,0.671) 50%, rgba(23,64,226,0.671) 73%);
     transition: all 0.2s ease;
 }
+
 
 .hero-section {
     background-image: url(img/fiap-scaled.jpg);
@@ -304,10 +309,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-}
-.header-scrolled .logo img {
-    width: 35px;
-}
 
 .sla{
     background-color: #151515;
@@ -315,16 +316,12 @@ footer {
     padding-top: 5px;
 }
 
-.header-scrolled {
-    background: linear-gradient(164deg, rgba(0, 0, 0, 0.671) 0%, rgba(16,45,160,0.671) 50%, rgba(23,64,226,0.671) 73%);
-    transition: all 0.2s ease;
-}
 .logo img {
     width: 100px;
     transition: all 0.3s ease;
 }
 strong{
-    color: #1740e2;
+    color: white;
     font-size: larger;
 }
 
