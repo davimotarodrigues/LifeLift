@@ -96,8 +96,8 @@ header .nav-links li a {
 }
 
 .classegradiente{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(50,81,205,1) 50%, #1740e2 100%);
-    align-self: center;
+    background: rgb(160,154,255);
+    background: linear-gradient(90deg, rgba(160,154,255,1) 0%, rgba(93,153,255,1) 50%, rgba(0,0,0,1) 100%);    align-self: center;
     margin-top: 15vh;
     margin-bottom: 20vh;
     padding-bottom: 38vh;
@@ -293,7 +293,7 @@ header .nav-links li a {
 
 .gradientefooter{
     padding: 10vh;
-    background: linear-gradient(0deg, rgba(21,21,21,1) 11%, #1740e2 100%);
+    background: linear-gradient(0deg, rgba(21,21,21,1) 11%, #274bda00 100%);
 }
 
 .service-card1 {
@@ -354,123 +354,6 @@ header .nav-links li a {
     justify-items: center;
 }
 
-.suavez {
-    text-align: center;
-    color: #f0f0f0;
-    padding: 40px;
-}
-
-
-.horademudar {
-    padding-top: 20.1vh;
-    padding-bottom: 80px;
-    background-size: cover;
-    background-position: center;
-    background-color: #274ada;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white; 
-}
-
-.card-container {
-    text-align: center;
-}
-
-.suavez {
-    color: #f0f0f0;
-    margin-bottom: 10px;
-}
-
-.horademudar-card {
-    display: inline-block;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    margin: 50px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    color: black;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 15px;
-    transition: all 0.2s ease;  
-}
-
-.horademudar-card ul{
-    margin-top: 30px;
-}
-
-.horademudar-card li{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: start;
-}
-
-.horademudar-card:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease;
-}
-
-.horademudar-cardajustada {
-    display: inline-block;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    margin: 50px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    color: black;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 15px;
-    transition: all 0.2s ease;  
-}
-
-.horademudar-cardajustada ul{
-    margin-top: 30px;
-}
-
-.horademudar-cardajustada li{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: start;
-}
-
-.horademudar-cardajustada:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease;
-}
-
-
-.iconhorademudar{
-    scale: 2;
-    padding: 20px;
-}
-
-.horademudar-card2 {
-    display: inline-block;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    margin: 50px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    color: black;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 15px;
-    transition: all 0.2s ease;  
-}
-
-.horademudar-card2 ul{
-    margin-top: 30px;
-}
-
-.horademudar-card2 li{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: start;
-}
-
-.horademudar-card2:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease;
-}
 
 .botao {
     background-color: #476cff;
@@ -503,111 +386,12 @@ header .nav-links li a {
     padding-bottom: 35px;
 }
 
-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: chegand3 1.5s ease-in;
-    color: #333;
-}
-
-form p {
-    text-align: center;
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: bold;
-    color: #1740e2;
-    max-width: 100%;
-    width: 100%;
-}
-
-form label {
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: bold;
-    color: #1740e2;
-    width: 100%;
-}
-
-form input, 
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #bcc8f7;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-}
-
-form input:focus, 
-form textarea:focus {
-    outline: none;
-    border-color: #1740e2;
-    box-shadow: 0 0 5px rgba(23, 64, 226, 0.3);
-}
-
-form textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-form button {
-    background: #1740e2;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: block;
-    margin: 20px auto 0;
-}
-
-form button:hover {
-    background: #112fa7;
-    transform: scale(1.05);
-}
-
-form label,
-form input,
-form textarea,
-form button {
-    opacity: 0;
-    animation: slideIn 0.5s ease-out forwards;
-}
-
-form label { animation-delay: 0.2s; }
-form input { animation-delay: 0.4s; }
-form textarea { animation-delay: 0.6s; }
-form button { animation-delay: 0.8s; }
-
-.services-section p{
-    grid-column: span 3;
-}
-
-.profiles-section{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    justify-content: center;
-}
-
-.profiles-section h2{
-grid-column: span 2;
-text-align: center;
-align-content: center;
-padding: 20px 0px 0px 20px;
-}
-
 footer {
     background: #151515;
     color: white;
     text-align: center;
     padding: 10px 0;
+    padding-top: 5%;
 }
 
 .logo img {
@@ -615,7 +399,7 @@ footer {
     transition: all 0.3s ease;
 }
 strong{
-    color: #1740e2;
+    color: white;
     font-size: larger;
 }
 
@@ -625,10 +409,6 @@ strong{
     border-radius: 50%;
     border: 5px solid #0086f3;
     transition: all 0.2s ease;
-}
-
-.classegradientediferente{
-    background: linear-gradient(273deg, rgba(255,255,255,1) 0%, rgba(188,200,247,1) 30%, rgba(148,167,242,1) 46%, rgba(106,133,237,1) 64%, #1740e2 100%);
 }
 
 .container {
@@ -748,50 +528,12 @@ strong{
     line-height: 1.5;
 }
 
-#bot-options{
-    list-style-type: none;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    width: 200px;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, height 0.5s ease;
-}
-
-
-#bot-options li {
-    color: #1c1d1b;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    text-decoration: none;
-}
-
-#bot-options li a{
-    color: #1c1d1b;
-    text-decoration: none;
-}
-
-#bot-options li:hover {
-    background-color: #ddd;
-}
-
-#bot-options.show {
-    opacity: 1;
-    height: auto;
-}
-
 .btnAI img:hover{
     transform: scale(1.3);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.sla{
-    background-color: #151515;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
 
 .btnAI{
     position: fixed;
